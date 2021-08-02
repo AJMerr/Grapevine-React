@@ -12,6 +12,7 @@
   "author": "Austin Merrill",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.13.5",
