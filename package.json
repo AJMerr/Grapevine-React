@@ -4,7 +4,10 @@
   "description": "This is a project app for posting random thougts for the world to see",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon main.js\" \"cd client && npm start\"",
+    "start": "node main.js",
+    "postinstall": "cd client && npm i && npm run build"
   },
   "author": "Austin Merrill",
   "license": "ISC",
