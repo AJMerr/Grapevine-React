@@ -1,0 +1,121 @@
+* {
+    list-style-type: none;
+}
+
+#content {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}  
+
+header {
+    font: normal 70pt/75pt arial;
+    margin: 55px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #a586c2;
+}
+
+nav {
+    font: normal 15pt/16pt arial;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a:link, nav a:visited {
+    background: #a586c2;
+    color: #fff;
+    margin: 10px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 30px;
+    letter-spacing: 0px;
+    transition: all 0.2s;
+}
+
+nav a:link:nth-child(even),nav a:visited:nth-child(even) {
+    background: #5bbd73;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background: #6948a1;
+    transition: all 0.2s;
+    transform: scale(1.2);
+}
+
+nav a:hover:nth-child(even) {
+    background: #0b9c2e;
+}
+
+a,a:link,a:visited {
+    text-decoration: none;
+    color: #6a5880;
+    transition: all 0.2s;
+    border-bottom: none;
+    background: #b4cfb6;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #fff;
+    background: #b7a6bf;
+    padding: 3px;
+    border-radius: 5px;
+    transition: all 0.2s;  
+}
+
+.v {
+    font: normal 70pt/75pt arial;
+    color: #5bbd73;
+}
+
+body {
+    background: #eee;
+    font: 11pt/19pt arial;
+    color: #333;
+}
+
+.messages {
+    background: #fff;
+    border: 7px solid #b0a1c9;
+    border-radius: 40px;
+    box-shadow: 0px 5px 1px #ccc;
+    margin: 10px 0 25px 0;
+    padding: 10px;
+}
+
+#submit {
+    margin: 0 auto;
+}
+
+input[type=text] {
+    background: #fff;
+    border: 7px solid #5bbd73;
+    border-radius: 40px;
+    box-shadow: 0px 5px 1px #ccc;
+    margin: 10px 0 25px 0;
+    padding: 10px;
+}
+
+input[type=submit] {
+    background: #5bbd73;
+    color: #fff;
+    margin: 10px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 30px;
+    letter-spacing: 0px;
+    transition: all 0.2s;
+}
+
+input[type=date] {
+    background: #fff;
+    border: 7px solid #5bbd73;
+    border-radius: 40px;
+    box-shadow: 0px 5px 1px #ccc;
+    margin: 10px 0 25px 0;
+    padding: 10px;
+}
