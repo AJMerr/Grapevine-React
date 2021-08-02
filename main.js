@@ -2,6 +2,7 @@
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
+const { grapeSeedRouter } = require('./controllers/grape_seed.js')
 
 
 // Middleware registration
@@ -18,7 +19,7 @@ app.use(methodOverride('_method'))
 
 
 //Creates routers for the application, first arguement is the path
-//app.use('/api/', filler)
+app.use('/api/', grapeSeedRouter)
 
 
  //Uses the client/build directory to host CSS and images

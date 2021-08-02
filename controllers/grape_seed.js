@@ -1,7 +1,7 @@
 const express = require('express')
 
 //Imports the GrapeSeed API
-const grapeSeedApi = require('../models/grapeSeed.js')
+const grapeSeedApi = require('../models/grape_seed.js')
 
 //Creates am Express router
 const grapeSeedRouter = express.Router()
