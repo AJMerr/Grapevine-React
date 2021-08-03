@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios  from 'axios'
-import "./styles.css"
 
 export default class AllSeeds extends Component {
 
@@ -18,7 +17,6 @@ export default class AllSeeds extends Component {
         try {
             const res = await axios.get("api/grapevine/")
             this.setState({ allSeeds: res.data })
-            console.log("Data has been reveieced")
         }
         catch (err) {
             console.log(err)
