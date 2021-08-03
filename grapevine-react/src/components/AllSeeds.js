@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios  from 'axios'
+import "./styles.css"
 
 export default class AllSeeds extends Component {
 
@@ -30,7 +31,7 @@ export default class AllSeeds extends Component {
             <div>
                 <h1> All Seeds </h1>
                 {this.state.allSeeds.map(allSeeds =>
-                    <p> {allSeeds.seed} </p>
+                    <div class="messages"> {allSeeds.seed}  </div> 
                     )}
             </div>
         )
