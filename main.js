@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
 const { grapeSeedRouter } = require('./controllers/grape_seed.js')
+const cors = require('cors')
 
 
 // Middleware registration
@@ -22,8 +23,17 @@ app.use(methodOverride('_method'))
 app.use('/api/', grapeSeedRouter)
 
 
- //Uses the client/build directory to host CSS and images
- app.use(express.static(`${__dirname}/client/build`))
+//Uses the client/build directory to host CSS and images
+app.use(express.static(`${__dirname}/client/build`))
+
+
+const corsOptions ={
+    origin:'http://localhost:3000', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+
+app.use(cors(corsOptions));
 
 
  // Set the port the server is to run on
