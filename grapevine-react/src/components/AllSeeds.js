@@ -27,7 +27,7 @@ export default class AllSeeds extends Component {
     render() {
         return (
             <div>
-                <h1> All Seeds </h1>
+                <header>Grape<span class= "v">vine</span> </header> 
                 {this.state.allSeeds.map(allSeeds =>
                     <div class="messages"> {allSeeds.seed}  </div> 
                     )}
