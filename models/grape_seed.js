@@ -3,7 +3,7 @@ const mongoose = require ("./connection.js")
 //Schema for the global post API
 const GrapeSeedSchema = new mongoose.Schema({
     seed: String,
-    created_at: Date
+    created_at: String
 })
 
 //Collection for SEeds 
