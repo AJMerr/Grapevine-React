@@ -33,10 +33,24 @@ export default class SingleSeed extends Component {
         }
     }
 
+    onDelete = async () => {
+        try {
+            const res = await axios.delete(`/api/grapevine/${this.props.match.params.id}`)
+            res.this.props.history.push("/")
+        }
+        catch (err) {
+            console.log(err)
+            this.setState({ error: err.message })
+        }
+    }
+
     render(){
         return(
             <div className="messages">
-            <li> {this.state.seed} </li>
+                <ul>
+                    <li> {this.state.seed} </li>
+                    <button onClick={this.onDelete.bind(this)}>Delete</button>
+                </ul>
             </div>
         )
     }
