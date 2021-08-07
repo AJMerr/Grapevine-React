@@ -37,7 +37,7 @@ export default class CreateSeed extends Component {
                     </label>
                     <label>
                         Created At:
-                        <input id="created at" type="text" value={this.state.newSeed.created_at} onChange={this.chaangeHandler} name="created at"/>
+                        <input id="created at" type="text" value={this.state.newSeed.created_at} onChange={this.chaangeHandler} name="created_at"/>
                     </label>
                     <button onClick={this.newSeed}> Sumbit </button>
                 </form>
