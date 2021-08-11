@@ -8,7 +8,7 @@ Grapevine was a project I created while attending General Assembly at the end of
 - Express.js
 - React
 - Node.js
-- Material-UI 
+- HTML/CSS 
 - Heroku 
 
 # Disclaimer
